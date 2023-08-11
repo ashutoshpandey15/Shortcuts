@@ -1,0 +1,45 @@
+ //To get current date via fxn we cna use
+const getCurrentDay = () => {                 //getting the day with a arrow function 
+        var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tue";
+        weekday[3] = "Wed";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+
+        let currentTime = new Date();
+        let day = weekday[currentTime.getDay()];
+        return day;
+      };
+
+
+//To GET CURRENT TIME WE USE
+
+const getCurrentTime = () => {
+        var months = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "June",
+          "July",
+          "Aug",
+          "Sept",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+
+        var now = new Date();
+        var month = months[now.getMonth() + 1];
+        var date = now.getDate();
+
+//To get hours and minutes we can use
+let hours = now.getHours();
+        let mins = now.getMinutes();
+
+
+
